@@ -4,7 +4,30 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">TESTING</a>.</p>
+
+<div class="container">
+    <form>
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <label for="startpoint" class="form-label">From</label>
+                <input type="text" class="form-control" id="startpoint" aria-describedby="startPoint">
+            </div>
+            <div class="mt-2 mb-4">
+                <label for="endpoint" class="form-label">To</label>
+                <input type="text" class="form-control" id="endpoint" aria-describedby="endPoint">
+            </div>
+            <div class="mt-4">
+                <label for="unitSystem" class="form-label">Package size</label>
+                <select id="unitSystem" class="form-select" aria-label="measurment unit select">
+                    <option value="Metric">Metric</option>
+                    <option value="Imperial">Imperial</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-8">
+            Column
+        </div>
+        </div>
+    </form>
 </div>
