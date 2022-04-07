@@ -10,20 +10,57 @@
     <div class="row">
         <div class="col-md-4">
             <div>
-                <label for="startpoint" class="form-label">From</label>
-                <input type="text" class="form-control" id="startpoint" aria-describedby="startPoint">
+                <label for="startpoint" class="form-label customLabel">From</label>
+                <input type="text" class="form-control" placeholder="pick-up city" id="startpoint" aria-describedby="startPoint">
             </div>
             <div class="mt-2 mb-4">
-                <label for="endpoint" class="form-label">To</label>
-                <input type="text" class="form-control" id="endpoint" aria-describedby="endPoint">
+                <label for="endpoint" class="form-label customLabel">To</label>
+                <input type="text" class="form-control" placeholder="delivery city" id="endpoint" aria-describedby="endPoint">
             </div>
-            <div class="mt-4">
-                <label for="unitSystem" class="form-label">Package size</label>
+            <div class="mt-4 mb-2">
+                <label for="unitSystem" class="form-label customLabel">Package size</label>
                 <select id="unitSystem" class="form-select" aria-label="measurment unit select">
                     <option value="Metric">Metric</option>
                     <option value="Imperial">Imperial</option>
                 </select>
             </div>
+             <div class="mt-4">
+                <label for="lenght" class="form-label customLabel">Length</label>
+                <input type="number" class="form-control" placeholder="length" id="lenght" aria-describedby="lenght">
+            </div>
+            <div class="mt-2">
+                <label for="width" class="form-label customLabel">Width</label>
+                <input type="number" class="form-control"placeholder="width" id="width" aria-describedby="width">
+            </div>
+            <div class="mt-2">
+                <label for="depth" class="form-label customLabel">Depth</label>
+                <input type="number" class="form-control" placeholder="depth" id="depth" aria-describedby="depth">
+            </div>
+            <div class="mt-2 mb-2">
+                <label for="weight" class="form-label customLabel">Weight</label>
+                <input type="number" class="form-control" placeholder="weigth" id="weight" aria-describedby="weight">
+            </div>
+             <div class="mt-4 mb-2">
+                <label for="typeOfGoods" class="form-label customLabel">Type Of Goods</label>
+                <select id="typeOfGoods" class="form-select" aria-label="typeOfGoodsSelect">
+                    <option value="Livestock">Livestock</option>
+                    <option value="Refrigerated">Refrigerated</option>
+                    <option value="Signed">Signed</option>
+                    <option value="Cautious/fragile">Cautious/Fragile</option>
+                </select>
+            </div>
+            <div>
+                <label for="typeOfGoods" class="form-label customLabel">Discount</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Provide discount code" aria-label="Discount code" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Apply</button>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg">Calculate</button>
+            </div>    
+        </div>
         </div>
         <div class="col-md-8">
             Column
@@ -31,3 +68,8 @@
         </div>
     </form>
 </div>
+<style>
+.customLabel{
+     font-weight: bold;
+}
+</style>
