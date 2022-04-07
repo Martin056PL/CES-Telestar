@@ -1,17 +1,25 @@
 ﻿@page
-@model IndexModel
+@model CES2022_Telestar.Models.InputRequest
+
 @{
     ViewData["Title"] = "Home page";
 }
-
+<pages>
+<namespace>
+    <add namespace="System.Web.Mvc" />
+    <add namespace="System.Web.Mvc.Ajax" />
+    <add namespace="System.Web.Mvc.Html" />
+    <add namespace="System.Web.Mvc.Routing" />
+</namespace>
+</pages>
 
 <div class="container">
-    <form>
+    <form asp-controller="HomeController" asp-actions="Index" method="post">
     <div class="row">
         <div class="col-md-4 parcelInfoContainer">
             <div>
                 <label for="startpoint" class="form-label customLabel">From</label>
-                <input type="text" class="form-control" placeholder="pick-up city" id="startpoint" aria-describedby="startPoint" required>
+                <input type="text" class="form-control" placeholder="pick-up city" id="startpoint" aria-describedby="startPoint" name="InputRequest.startPoint" required>
             </div>
             <div class="mt-2 mb-4">
                 <label for="endpoint" class="form-label customLabel">To</label>
@@ -58,7 +66,7 @@
                 </div>
             </div>
             <div class="mt-4 text-center">
-                <button type="button" class="btn btn-primary btn-lg">Calculate</button>
+                <button type="submit" class="btn btn-primary btn-lg">Calculate</button>
             </div>    
         </div>
         </div>
