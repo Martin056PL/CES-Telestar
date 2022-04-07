@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CES2022-Telestar/1.0.0": {
+        "runtime": {
+          "CES2022-Telestar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CES2022-Telestar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
