@@ -8,7 +8,7 @@
 <div class="container">
     <form>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 parcelInfoContainer">
             <div>
                 <label for="startpoint" class="form-label customLabel">From</label>
                 <input type="text" class="form-control" placeholder="pick-up city" id="startpoint" aria-describedby="startPoint">
@@ -62,14 +62,58 @@
             </div>    
         </div>
         </div>
-        <div class="col-md-8">
-            Column
+        <div class="col-md-8 deliverySection">
+            <div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Delivery option</th>
+                      <th scope="col">Total cost</th>
+                      <th scope="col">Time (days)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <input type="radio" id="cheapDel" value="" name="deliveryOption">
+                      </th>
+                      <td>The Cheapest Delivery</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <input type="radio" id="fastDel" value="" name="deliveryOption">
+                      </th>
+                      <td>The Fastest Delivery</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+            </table>
+            </div>
+            <div>
+                <h2 class="listHeader">Route</h2>
+                <p class="deliveryList">Select delivery option</p>
+            </div>
+            <button type="button" class="btn btn-primary">BOOK DELIVERY</button>
         </div>
         </div>
     </form>
 </div>
 <style>
+.container {
+    margin: 0;
+}
 .customLabel{
      font-weight: bold;
+}
+.parcelInfoContainer {
+    padding-top: 20px;   
+ }
+.deliverySection {
+    background-color: #edf2fb;
+    padding: 20px 0 0 20px;
 }
 </style>
