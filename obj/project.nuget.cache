@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XMPu8qxwTrWgCkvzKFMApi8WQxemz4MKB8z0OIeBzKuVsmRso6f6LCF+gZWjYTJqOQAW8nAeSqXwalPdXMPMFg==",
+  "dgSpecHash": "j7pe9H5tjxsfe36JmU90rnK54Ur2KaaiQUFo6x8nVbYJI3N963vqPE/SCn0iMmMvzeHUxEhHfeFCZ6AmurydRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kamw\\source\\repos\\CES2022-Telestar\\CES2022-Telestar.csproj",
+  "projectFilePath": "C:\\CES-Telestar\\CES2022-Telestar.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
