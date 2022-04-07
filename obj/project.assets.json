@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kamw\\.nuget\\packages\\": {}
+    "C:\\Users\\ceng\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kamw\\source\\repos\\CES2022-Telestar\\CES2022-Telestar.csproj",
+      "projectUniqueName": "C:\\CES-Telestar\\CES2022-Telestar.csproj",
       "projectName": "CES2022-Telestar",
-      "projectPath": "C:\\Users\\kamw\\source\\repos\\CES2022-Telestar\\CES2022-Telestar.csproj",
-      "packagesPath": "C:\\Users\\kamw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kamw\\source\\repos\\CES2022-Telestar\\obj\\",
+      "projectPath": "C:\\CES-Telestar\\CES2022-Telestar.csproj",
+      "packagesPath": "C:\\Users\\ceng\\.nuget\\packages\\",
+      "outputPath": "C:\\CES-Telestar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kamw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ceng\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
