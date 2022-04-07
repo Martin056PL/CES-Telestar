@@ -8,6 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="route\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Content\Images\telstar.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dijkstra.NET" Version="1.2.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>

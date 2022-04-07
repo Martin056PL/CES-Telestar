@@ -8,26 +8,119 @@
 <div class="container">
     <form>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 parcelInfoContainer">
             <div>
-                <label for="startpoint" class="form-label">From</label>
-                <input type="text" class="form-control" id="startpoint" aria-describedby="startPoint">
+                <label for="startpoint" class="form-label customLabel">From</label>
+                <input type="text" class="form-control" placeholder="pick-up city" id="startpoint" aria-describedby="startPoint" required>
             </div>
             <div class="mt-2 mb-4">
-                <label for="endpoint" class="form-label">To</label>
-                <input type="text" class="form-control" id="endpoint" aria-describedby="endPoint">
+                <label for="endpoint" class="form-label customLabel">To</label>
+                <input type="text" class="form-control" placeholder="delivery city" id="endpoint" aria-describedby="endPoint" required>
             </div>
-            <div class="mt-4">
-                <label for="unitSystem" class="form-label">Package size</label>
+            <div class="mt-4 mb-2">
+                <label for="unitSystem" class="form-label customLabel">Package size</label>
                 <select id="unitSystem" class="form-select" aria-label="measurment unit select">
                     <option value="Metric">Metric</option>
                     <option value="Imperial">Imperial</option>
                 </select>
             </div>
+             <div class="mt-4">
+                <label for="lenght" class="form-label customLabel">Length</label>
+                <input type="number" class="form-control" placeholder="length" id="lenght" aria-describedby="lenght" min="1" required>
+            </div>
+            <div class="mt-2">
+                <label for="width" class="form-label customLabel">Width</label>
+                <input type="number" class="form-control"placeholder="width" id="width" aria-describedby="width" min="1" required>
+            </div>
+            <div class="mt-2">
+                <label for="depth" class="form-label customLabel">Depth</label>
+                <input type="number" class="form-control" placeholder="depth" id="depth" aria-describedby="depth" min="1" required>
+            </div>
+            <div class="mt-2 mb-2">
+                <label for="weight" class="form-label customLabel">Weight</label>
+                <input type="number" class="form-control" placeholder="weigth" id="weight" aria-describedby="weight" min="1" max="40" required>
+            </div>
+             <div class="mt-4 mb-2">
+                <label for="typeOfGoods" class="form-label customLabel">Type Of Goods</label>
+                <select id="typeOfGoods" class="form-select" aria-label="typeOfGoodsSelect">
+                    <option value="Livestock">Livestock</option>
+                    <option value="Refrigerated">Refrigerated</option>
+                    <option value="Signed">Signed</option>
+                    <option value="Cautious/fragile">Cautious/Fragile</option>
+                </select>
+            </div>
+            <div>
+                <label for="typeOfGoods" class="form-label customLabel">Discount</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Provide discount code" aria-label="Discount code" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Apply</button>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg">Calculate</button>
+            </div>    
         </div>
-        <div class="col-md-8">
-            Column
+        </div>
+        <div class="col-md-8 deliverySection">
+            <div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Delivery option</th>
+                      <th scope="col">Total cost</th>
+                      <th scope="col">Time (days)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <input type="radio" id="cheapDel" value="" name="deliveryOption">
+                      </th>
+                      <td>The Cheapest Delivery</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <input type="radio" id="fastDel" value="" name="deliveryOption">
+                      </th>
+                      <td>The Fastest Delivery</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+            </table>
+            </div>
+            <div>
+                <h2 class="listHeader">Route</h2>
+                <p class="deliveryList">Select delivery option</p>
+            </div>
+            <div class="col-8 text-right">
+                <button type="button" class="btn btn-primary btn-lg" id="bookBtn">BOOK DELIVERY</button>
+            </div>
         </div>
         </div>
     </form>
 </div>
+<style>
+
+.customLabel{
+     font-weight: bold;
+}
+.parcelInfoContainer {
+    padding-top: 20px;   
+ }
+.deliverySection {
+    background-color: #edf2fb;
+    padding: 20px 0 0 20px;
+}
+.listHeader {
+    margin-top: 100px;
+}
+#bookBtn {
+    margin: 440px 0px 0px 560px;
+    width: 200px;
+}
+</style>

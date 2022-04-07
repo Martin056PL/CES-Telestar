@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "093cdb21-9451-4c69-8a9c-0fd8f9e8fccd": {
+      "ProjectGuid": "093cdb21-9451-4c69-8a9c-0fd8f9e8fccd",
+      "DisplayName": "CES2022-Telestar",
+      "ColorIndex": 0
+    },
+    "9735609d-17e9-485b-b10d-b0ad2779bb0f": {
+      "ProjectGuid": "9735609d-17e9-485b-b10d-b0ad2779bb0f",
+      "DisplayName": "TelstarLogistics",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
