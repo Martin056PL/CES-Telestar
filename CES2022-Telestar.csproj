@@ -7,4 +7,12 @@
     <RootNamespace>CES2022_Telestar</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="route\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+  </ItemGroup>
+
 </Project>
