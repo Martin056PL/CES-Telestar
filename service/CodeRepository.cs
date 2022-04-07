@@ -12,7 +12,7 @@ public class CodeRepository
 		//
 	}
 
-	public void fetchData()
+	public static void fetchData()
     {
 
     }
