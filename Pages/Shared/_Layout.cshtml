@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
-            <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow">
+            <div class="logoContainer">
                 <div class="row">
                      <div class="col d-flex align-items-center">
-                        <img src="~/Content/Images/telstar.jpg" style= height=70px/>
+                        <img src="~/Content/Images/telstar.jpg" class="logoImg"/>
                      </div>
                      <div class="col d-flex align-items-center">
                         <a id="title" class="navbar-brand white" asp-page="/Index">TELSTAR LOGISTICS</a>
@@ -37,12 +37,25 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <style>
+        .body {
+            margin: 0px;
+        }
+        main {
+            padding-bottom: 0px;
+        }
         #title {
           font-family: 'Roboto', sans-serif;
           font-size: 30px;
           font-weight: bold;
           font-style: italic;
           color: white;
+        }
+        .logoContainer {
+             margin-left: 40px; 
+        }
+        .logoImg {
+            height: 70px;
+            border-radius: 5px;
         }
       </style>
 
